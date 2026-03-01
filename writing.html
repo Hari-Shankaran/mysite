@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>writing — hari shankaran</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Merriweather', serif;
+    background: #8abcff;
+    color: #ffffff;
+    line-height: 1.75;
+    font-weight: 400;
+    font-size: 15.5px;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: -20px;
+    right: -40px;
+    width: 500px;
+    height: 400px;
+    pointer-events: none;
+    opacity: 0.18;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 400'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M250 80 Q230 50 200 60 Q230 65 250 80 Q270 65 300 60 Q270 50 250 80'/%3E%3Cpath d='M350 140 Q335 115 310 123 Q335 127 350 140 Q365 127 390 123 Q365 115 350 140'/%3E%3Cpath d='M150 160 Q138 140 118 146 Q138 149 150 160 Q162 149 182 146 Q162 140 150 160'/%3E%3Cpath d='M420 60 Q410 45 395 50 Q410 52 420 60 Q430 52 445 50 Q430 45 420 60'/%3E%3Cpath d='M80 100 Q72 88 60 92 Q72 94 80 100 Q88 94 100 92 Q88 88 80 100'/%3E%3Cpath d='M300 30 Q292 18 280 22 Q292 24 300 30 Q308 24 320 22 Q308 18 300 30'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 220px;
+    pointer-events: none;
+    opacity: 0.15;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 220'%3E%3Cpath d='M0 120 Q180 60 360 120 Q540 180 720 120 Q900 60 1080 120 Q1260 180 1440 120' fill='none' stroke='%23ffffff' stroke-width='2.5'/%3E%3Cpath d='M0 150 Q180 90 360 150 Q540 210 720 150 Q900 90 1080 150 Q1260 210 1440 150' fill='none' stroke='%23ffffff' stroke-width='1.8'/%3E%3Cpath d='M0 180 Q180 130 360 180 Q540 220 720 180 Q900 130 1080 180 Q1260 220 1440 180' fill='none' stroke='%23ffffff' stroke-width='1.2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  .bg-stripes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    pointer-events: none;
+    opacity: 0.15;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='30'%3E%3Cline x1='0' y1='30' x2='60' y2='0' stroke='%23ffffff' stroke-width='3'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    z-index: 0;
+  }
+
+  a { color: #ffffff; text-decoration: none; }
+  a:hover { text-decoration: underline; opacity: 0.85; }
+
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 5rem 2rem 6rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .name {
+    font-family: 'Merriweather', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.15rem;
+  }
+
+  .top-rule {
+    border: none;
+    height: 2.5px;
+    background: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0.2), transparent);
+    margin-bottom: 2rem;
+  }
+
+  .bio { margin-bottom: 2.25rem; color: #ffffff; }
+  .bio p { margin-bottom: 0.9rem; }
+
+  .bottom-rule {
+    border: none;
+    height: 1px;
+    background: rgba(255,255,255,0.25);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+
+  @media (max-width: 600px) {
+    .page { padding: 3rem 1.25rem 4rem; }
+    .name { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-stripes"></div>
+<div class="page">
+
+  <h1 class="name">writing</h1>
+  <div style="display:flex;gap:1.25rem;margin:0.5rem 0 1.25rem;">
+    <a href="index.html" style="font-size:0.9rem;border-bottom:1px solid rgba(255,255,255,0.35);padding-bottom:1px;">home</a>
+    <a href="manga.html" style="font-size:0.9rem;border-bottom:1px solid rgba(255,255,255,0.35);padding-bottom:1px;">manga</a>
+  </div>
+  <hr class="top-rule">
+
+  <div class="bio">
+    <p>a collection of my writing. this page is a work in progress.</p>
+    <p>check back soon for updates!</p>
+  </div>
+
+  <hr class="bottom-rule">
+  <p class="footer">© 2026 hari shankaran</p>
+
+</div>
+
+</body>
+</html>
